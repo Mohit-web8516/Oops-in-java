@@ -22,24 +22,29 @@
 //EXAMPLEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 
 
-class Employee {
-    String name;
-    void work() {
-        System.out.println(name + " is working");
-    }
-}
+// class Employee {
+//     String name;
+//     void work() {
+//         System.out.println(name + " is working");
+//     }
+// }
 
-class Manager extends Employee {
-    void manageTeam() {
-        System.out.println(name + " is managing the team");
-    }
-}
+// class Manager extends Employee {
+//     void manageTeam() {
+//         System.out.println(name + " is managing the team");
+//     }
+// }
 
-public class inheritence {
-    public static void main(String[] args) {
-        Manager m = new Manager();
-        m.name = "ALEX";
-        m.work();        // Inherited method
-        m.manageTeam();  // Manager-specific method
-    }
-}
+// public class inheritence {
+//     public static void main(String[] args) {
+//         Manager m = new Manager();
+//         m.name = "ALEX";
+//         m.work();        // Inherited method
+//         m.manageTeam();  // Manager-specific method
+//     }
+// }
+
+
+
+/////////////////////////////////////////////////////////
+/* */
