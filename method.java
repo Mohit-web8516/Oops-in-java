@@ -29,14 +29,30 @@
 //Parameterized Methods
 
 
-class Greeting {
-    void sayHello(String name) {
-        System.out.println("Hello, " + name);
+// class Greeting {
+//     void sayHello(String name) {
+//         System.out.println("Hello, " + name);
+//     }
+// }
+// public class method {
+//     public static void main(String[] args) {
+//         Greeting g = new Greeting();
+//         g.sayHello("Alex"); // Hello, Alex
+//     }
+// }
+
+
+//Return-Type Methods
+
+class Circle {
+    double area(double radius) {
+        return 3.14 * radius * radius;
     }
 }
 public class method {
     public static void main(String[] args) {
-        Greeting g = new Greeting();
-        g.sayHello("Alex"); // Hello, Alex
+        Circle c = new Circle();
+        System.out.println("Area: " + c.area(5)); // 78.5
     }
 }
+
