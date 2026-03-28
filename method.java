@@ -14,16 +14,29 @@
 
 //static method
 
-class MathUtil {
-    static int square(int x) {
-        return x * x;
-    }
-}
-public class method{
-    public static void main(String[] args) {
-        System.out.println(MathUtil.square(4)); // 16
-    }
-}
+// class MathUtil {
+//     static int square(int x) {
+//         return x * x;
+//     }
+// }
+// public class method{
+//     public static void main(String[] args) {
+//         System.out.println(MathUtil.square(4)); // 16
+//     }
+// }
 
 
 //Parameterized Methods
+
+
+class Greeting {
+    void sayHello(String name) {
+        System.out.println("Hello, " + name);
+    }
+}
+public class method {
+    public static void main(String[] args) {
+        Greeting g = new Greeting();
+        g.sayHello("Alex"); // Hello, Alex
+    }
+}
