@@ -44,15 +44,35 @@
 
 //Return-Type Methods
 
-class Circle {
-    double area(double radius) {
-        return 3.14 * radius * radius;
+// class Circle {
+//     double area(double radius) {
+//         return 3.14 * radius * radius;
+//     }
+// }
+// public class method {
+//     public static void main(String[] args) {
+//         Circle c = new Circle();
+//         System.out.println("Area: " + c.area(5)); // 78.5
+//     }
+// }
+
+
+//: Method Overloading
+
+
+class Printer {
+    void print(int num) {
+        System.out.println("Printing number: " + num);
     }
-}
-public class method {
-    public static void main(String[] args) {
-        Circle c = new Circle();
-        System.out.println("Area: " + c.area(5)); // 78.5
+    void print(String text) {
+        System.out.println("Printing text: " + text);
     }
 }
 
+public class method {
+    public static void main(String[] args) {
+        Printer p = new Printer();
+        p.print(100);       // Output: Printing number: 100
+        p.print("Hello");   // Output: Printing text: Hello
+    }
+}
