@@ -60,19 +60,36 @@
 //: Method Overloading
 
 
-class Printer {
-    void print(int num) {
-        System.out.println("Printing number: " + num);
-    }
-    void print(String text) {
-        System.out.println("Printing text: " + text);
+// class Printer {
+//     void print(int num) {
+//         System.out.println("Printing number: " + num);
+//     }
+//     void print(String text) {
+//         System.out.println("Printing text: " + text);
+//     }
+// }
+
+// public class method {
+//     public static void main(String[] args) {
+//         Printer p = new Printer();
+//         p.print(100);       // Output: Printing number: 100
+//         p.print("Hello");   // Output: Printing text: Hello
+//     }
+// }
+
+
+//Method Returning A Value 
+
+class Circle {
+    double area(double radius) {
+        return 3.14 * radius * radius;
     }
 }
 
 public class method {
     public static void main(String[] args) {
-        Printer p = new Printer();
-        p.print(100);       // Output: Printing number: 100
-        p.print("Hello");   // Output: Printing text: Hello
+        Circle c = new Circle();
+        double result = c.area(5);
+        System.out.println("Area: " + result); // Output: Area: 78.5
     }
 }
